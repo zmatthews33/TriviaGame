@@ -22,6 +22,7 @@ body {
     0 -2px rgb(226, 224, 226);
   border-style: solid;
   border-color: #fff00f;
+  padding-top: 0;
 }
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
