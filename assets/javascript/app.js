@@ -37,8 +37,7 @@ var gameState = {
     $("#correct-answers").text("Correct: " + numCorrect);
     $("#incorrect-answers").text("Incorrect: " + numIncorrect);
     $("#unanswered").text("Unanswered: " + numUnanswered);
-    $("#timer").empty();
-    $("#timer").hide();
+    $("#timer").remove();
   }
 };
 
@@ -80,7 +79,7 @@ var trivia = {
     }
 
     var doneButton =
-      '<button class="btn btn-primary btn-lg text-center" id="done-button" type="submit">Done</button>';
+      '<button class="btn btn-primary btn-lg" id="done-button" type="submit">Done</button>';
     divContainer.append(doneButton);
     $("#done-button").on("click", gameState.stopTimer);
     $("#timer").hide();
